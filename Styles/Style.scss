@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.glassmorphism{
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 16.5px );
+    -webkit-backdrop-filter: blur( 16.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+}
+
+
+
 
 nav{
     min-height: 7vh;
@@ -16,14 +28,17 @@ nav{
     padding-left: 10px;
 }
 
+
+
 .container{
     font-family: sans-serif;
   
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-
+     
+    margin-top: 2rem;
     padding: 20px;
 
     .error {
@@ -32,18 +47,22 @@ nav{
     }
 
     .description {
-        padding-bottom: 10px;
+        padding: 10px;
     }
     label{
-        padding: 10px;
+padding-top: 10px;
+        display: inline-block;
+        width: 5rem;
        
     }
+
+    input{
+        padding: 10px;
+        border-radius: 2rem;
+    }
+    
     .center{
-        text-align: center;
-        width: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 10px;
     }
 
    input {
@@ -51,15 +70,31 @@ nav{
    }
 
     button{
-        padding: 10px 20px;
+        padding: 10px 25px;
         border-radius: 2rem;
+        cursor: pointer;
         outline: none;
-        border: none;
-        background-color: wheat;
-        color: rgb(193, 193, 193);
+
+
+
     }
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .change-table{
   
 
